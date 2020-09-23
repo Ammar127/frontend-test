@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
-import Map from './pages/Map';
+import MapContainer from "./pages/MapContainer";
 import Home from './pages/Home';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/map">
-          <Map />
+          <MapContainer />
         </Route>
         <Route path="/">
           <Home />
